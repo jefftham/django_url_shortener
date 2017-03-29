@@ -1,0 +1,24 @@
+<div>
+    <table class="table table-hover">
+        <tr>
+            <th>#</th>
+            <th>Full URL</th>
+            <th>Short code</th>
+            <th>Click Count</th>
+            <th>Edit</th>
+        </tr>
+        {% for url in urls %}
+        <form action="" method="post">
+            <tr>
+                <td class="col-md-1">{{ forloop.counter }}</td>
+                <td class="col-md-5"><a href="{{prefix_server}}{{url.short}}">{{url.domain}}...</a><input type="hidden" name="full" type="text" value={{url.full}}></input>
+                </td>
+                <td class="col-md-3"><a href="{{prefix_server}}{{url.short}}">{{url.short}}</a></td>
+                <td class="col-md-2">{{url.count}}</td>
+                <td class="col-md-1"><button type="submit" class="btn btn-info glyphicon glyphicon-edit"></button></td>
+            </tr>
+            {% csrf_token %}
+        </form>
+        {% endfor %}
+    </table>
+</div>
