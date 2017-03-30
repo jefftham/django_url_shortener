@@ -16,8 +16,12 @@ A self-learning project that use django to build url shortener and style with Bo
     $ python manage.py makemigrations
     $ python manage.py migrate
 
-## Optional admin interface
+## Optional: admin interface
     $ python manage.py createsuperuser
 
 ## Run the server
     $ python manage.py runserver
+
+## Optional: change to debug mode
+    open: urlShortener/settings.py
+    edit: DEBUG = True
