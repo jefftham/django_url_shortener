@@ -1,6 +1,11 @@
 # django_url_shortener
 A self-learning project that use django to build url shortener and style with Boostrap
 
+# Demo server
+[https://url-shortener-django.herokuapp.com/](https://url-shortener-django.herokuapp.com/)
+![alt text](http://imgur.com/a/MT7T8 "preview")
+
+
 # Installation
 
 ## Setting up a development environment
