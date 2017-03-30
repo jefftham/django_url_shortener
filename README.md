@@ -4,7 +4,7 @@ A self-learning project that use django to build url shortener and style with Bo
 # Demo server
 [https://url-shortener-django.herokuapp.com/](https://url-shortener-django.herokuapp.com/)
 
-![alt text](http://i.imgur.com/8igbmom.png "preview")
+[![alt text](http://i.imgur.com/8igbmom.png "preview")](https://url-shortener-django.herokuapp.com/)
 
 
 # Installation
