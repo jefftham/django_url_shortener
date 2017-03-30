@@ -55,9 +55,10 @@ def index(request):
         context["form"] = form
     # pull all shorten url
     urls = Url_table.objects.all()
-    for url in urls:
-        url.domain = get_domain(url.full)
-    context['urls'] = urls
+    if len(urls) > 0:
+        for url in urls:
+            url.domain = get_domain(url.full)
+        context['urls'] = urls
     return render(request, template, context)
 
 
